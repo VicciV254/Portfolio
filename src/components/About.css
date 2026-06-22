@@ -1,0 +1,81 @@
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.about-text {
+  padding: 1.8rem;
+}
+
+.skills-box {
+  background: rgba(0, 20, 40, 0.6);
+  border-radius: 1.5rem;
+  padding: 1.6rem;
+  border: 1px solid rgba(0, 255, 255, 0.3);
+}
+
+.skills-box h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.skill-tags span {
+  background: rgba(0, 200, 255, 0.15);
+  backdrop-filter: blur(4px);
+  padding: 0.5rem 1.2rem;
+  border-radius: 40px;
+  font-weight: 500;
+  border: 1px solid rgba(0, 255, 255, 0.4);
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.skill-tags span:hover {
+  background: cyan;
+  color: #0a0f1e;
+  box-shadow: 0 0 12px cyan;
+  transform: scale(1.02);
+}
+
+.interests-extra {
+  display: flex;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+
+.interest-item {
+  background: rgba(0, 255, 255, 0.1);
+  border-radius: 30px;
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  backdrop-filter: blur(4px);
+}
+
+.interests-section {
+  margin-top: 1.5rem;
+}
+
+@media (max-width: 800px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+}

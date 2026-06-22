@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: radial-gradient(circle at 20% 30%, #0a0f1e, #03060c);
+  color: #eef5ff;
+  font-family: 'Poppins', 'Segoe UI', system-ui, -apple-system, 'Inter', sans-serif;
+  line-height: 1.5;
+  scroll-behavior: smooth;
+}
+
+/* futuristic glow & glassmorphism */
+.glass-card {
+  background: rgba(15, 25, 45, 0.55);
+  backdrop-filter: blur(12px);
+  border-radius: 2rem;
+  border: 1px solid rgba(0, 255, 255, 0.2);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3), 0 0 8px rgba(0, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.glass-card:hover {
+  border-color: rgba(0, 255, 255, 0.6);
+  box-shadow: 0 20px 40px rgba(0, 180, 255, 0.2), 0 0 15px cyan;
+  transform: translateY(-5px);
+}
+
+/* container & sections */
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+section {
+  scroll-margin-top: 5rem;
+  margin-bottom: 4rem;
+}
+
+.section-title {
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  display: inline-block;
+  border-left: 6px solid #0ff;
+  padding-left: 1.2rem;
+  text-shadow: 0 0 5px cyan;
+}
+
+/* responsive */
+@media (max-width: 800px) {
+  .container {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 1rem;
+  }
+}
